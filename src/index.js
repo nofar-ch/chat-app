@@ -22,7 +22,8 @@ firebase.initializeApp({
     measurementId: "G-JZLN897R23"
 });
 
-ReactDOM.render( <Router>
+ReactDOM.render( <Router basename="/chat-app">
+
     <div id='routing-container'> 
     <Switch>
         <Route exact path="/" component={Dashboard}></Route>  
