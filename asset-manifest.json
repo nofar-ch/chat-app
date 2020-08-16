@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/chat-app/dashboard/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/chat-app/dashboard/static/js/main.f105829a.chunk.js",
-    "main.js.map": "/chat-app/dashboard/static/js/main.f105829a.chunk.js.map",
+    "main.js": "/chat-app/dashboard/static/js/main.d644e35a.chunk.js",
+    "main.js.map": "/chat-app/dashboard/static/js/main.d644e35a.chunk.js.map",
     "runtime-main.js": "/chat-app/dashboard/static/js/runtime-main.210dd897.js",
     "runtime-main.js.map": "/chat-app/dashboard/static/js/runtime-main.210dd897.js.map",
     "static/css/2.c2bc211b.chunk.css": "/chat-app/dashboard/static/css/2.c2bc211b.chunk.css",
-    "static/js/2.2222e551.chunk.js": "/chat-app/dashboard/static/js/2.2222e551.chunk.js",
-    "static/js/2.2222e551.chunk.js.map": "/chat-app/dashboard/static/js/2.2222e551.chunk.js.map",
+    "static/js/2.0cffc46e.chunk.js": "/chat-app/dashboard/static/js/2.0cffc46e.chunk.js",
+    "static/js/2.0cffc46e.chunk.js.map": "/chat-app/dashboard/static/js/2.0cffc46e.chunk.js.map",
     "index.html": "/chat-app/dashboard/index.html",
-    "precache-manifest.d80f2125403b7173772e1c7b9d0ab3f5.js": "/chat-app/dashboard/precache-manifest.d80f2125403b7173772e1c7b9d0ab3f5.js",
+    "precache-manifest.23cc43aacf96a06487f5fe7906dbd975.js": "/chat-app/dashboard/precache-manifest.23cc43aacf96a06487f5fe7906dbd975.js",
     "service-worker.js": "/chat-app/dashboard/service-worker.js",
     "static/css/2.c2bc211b.chunk.css.map": "/chat-app/dashboard/static/css/2.c2bc211b.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/chat-app/dashboard/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.2222e551.chunk.js.LICENSE.txt": "/chat-app/dashboard/static/js/2.2222e551.chunk.js.LICENSE.txt",
+    "static/js/2.0cffc46e.chunk.js.LICENSE.txt": "/chat-app/dashboard/static/js/2.0cffc46e.chunk.js.LICENSE.txt",
     "static/media/edit.png": "/chat-app/dashboard/static/media/edit.66a43e3e.png",
     "static/media/messenger.png": "/chat-app/dashboard/static/media/messenger.cf3b5c0d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.210dd897.js",
     "static/css/2.c2bc211b.chunk.css",
-    "static/js/2.2222e551.chunk.js",
+    "static/js/2.0cffc46e.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.f105829a.chunk.js"
+    "static/js/main.d644e35a.chunk.js"
   ]
 }
