@@ -17,7 +17,6 @@ class NewGroup extends React.Component {
                         friends: [],
                         users: [],
                         errorExistName: false,
-                        errorUsersLength: false
         };
     }  
 
@@ -64,30 +63,38 @@ class NewGroup extends React.Component {
       this.setState({nameOfGroup: e.target.value});
     }
 
-    createNewGroup = (groupObj) => {
-        this.props.createNewGroupFn(groupObj)
-    }
-
     submitNewGroup = (e) => {
         e.preventDefault();
-        if(this.state.users.length < 2){
-             this.setState({errorUsersLength : true});
-        }
-        else {
-            var addManager = this.state.users;
-            addManager.push(this.state.manager);
-            this.setState({users: addManager});
-            var groupObj = { nameOfGroup: this.state.nameOfGroup,
-                                manager: this.state.manager,
-                                users: this.state.users
-                    };
-            this.props.createNewGroupFn(groupObj);
-        }
-    }
+        var that = this; 
 
-    groupName = () => {
-        this.setState({errorExistName: true})
-    }
+        firebase.firestore().collection("chats").doc(this.state.nameOfGroup)
+        .get().then(function(doc) { 
+            console.log(doc)
+            if(doc.exists)
+                that.nameError();
+            else {
+                that.sendData();
+            }
+        }).catch(function(error) {
+            console.log("Error getting document:", error);
+        });
+     }
+
+     nameError = () => {
+         console.log("error")
+         this.setState({errorExistName: true})
+     }
+
+     sendData = () => {
+        var addManager = this.state.users;
+        addManager.push(this.state.manager);
+        this.setState({users: addManager});
+        var groupObj = { nameOfGroup: this.state.nameOfGroup,
+                            manager: this.state.manager,
+                            users: this.state.users
+                };         
+        this.props.createNewGroupFn(groupObj);
+     }
 
     render() {
 
@@ -114,11 +121,7 @@ class NewGroup extends React.Component {
             </form>
             {
                 this.state.errorExistName ?
-                <div className={classes.errorText}>{this.state.errorExistName}</div> : null
-            }
-            {
-                this.state.errorUsersLength ?
-                <div className={classes.errorText}>To open a new group you need to select at least 2 friends</div> : null
+                <div className={classes.errorText}>this name already exist</div> : null
             }
             </Paper>
             </main>)

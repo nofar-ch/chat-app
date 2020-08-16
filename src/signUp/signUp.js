@@ -51,7 +51,7 @@ constructor() {
                 .doc(this.state.email)
                 .set(userObj)
                 .then( () => {
-                    this.props.history.push('/dashboard')
+                    this.props.history.push('/')
                 }, dbError => {
                     //database error
                     this.setState({signupError : 'Failed to add user'});

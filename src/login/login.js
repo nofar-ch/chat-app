@@ -29,7 +29,7 @@ submitLogIn = async  (e) => {
     .auth()
     .signInWithEmailAndPassword(this.state.email, this.state.password)
     .then(() => {
-        this.props.history.push('/dashboard');
+        this.props.history.push('/');
     }, error => {
         this.setState({loginError: 'Server error'});
     });

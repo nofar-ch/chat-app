@@ -30,8 +30,10 @@ componentDidMount = () => {
      firebase
     .auth()
     .onAuthStateChanged(async user => {
-        if(!user) //user didn't login or don't exist
-            this.props.history.push('/login'); 
+        if(!user) { //user didn't login or don't exist
+         console.log("no user")
+         this.props.history.push('/login'); 
+        }
         else {
             const ref = firebase.firestore();
             await ref.collection('chats')

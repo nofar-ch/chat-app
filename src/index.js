@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-import {Route, BrowserRouter as Router} from 'react-router-dom';
+import {Route, Switch, BrowserRouter as Router} from 'react-router-dom';
 import Login from './login/login';
 import SignUp from './signUp/signUp';
 import Dashboard from './dashboard/dashboard';
@@ -23,10 +23,12 @@ firebase.initializeApp({
 });
 
 ReactDOM.render( <Router>
-    <div id='routing-container'>
+    <div id='routing-container'> 
+    <Switch>
+        <Route exact path="/" component={Dashboard}></Route>  
         <Route path="/login" component={Login}></Route>
         <Route path="/signup" component={SignUp}></Route>
-        <Route path="/dashboard" component={Dashboard}></Route>
+    </Switch>
     </div>
 </Router>, document.getElementById('root'));
 
