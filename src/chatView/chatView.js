@@ -32,12 +32,12 @@ class ChatView extends React.Component {
                     { 
                         chat.type === 'private' ?
                         <div>
-                            <div style={{position: 'absolute', left: 'auto', textAlign: 'center'}}>
+                            <div className={classes.btn}>
                             <Button variant="contained" color="default" size="small" startIcon={<DeleteIcon/>} onClick={()=>this.deleteChat()}>delete </Button></div>
                             You are chatting with {chat.usersNames.filter(usr => usr !== this.props.userName)[0]}
                         </div>
                         :<div>
-                            <div style={{position: 'absolute', left: 'auto', textAlign: 'center'}}>
+                            <div className={classes.btn}>
                             <Button variant="contained" color="default" size="small"  onClick={()=>this.showGroupList()} style={{padding: '3px'}}>friends list</Button></div>
                             You are chatting with {chat.nameOfGroup}
                         </div>

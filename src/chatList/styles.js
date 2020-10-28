@@ -32,7 +32,8 @@ const styles = theme => ({
       backgroundColor: deepPurple[500],
     },
     img: {
-      width: '10%'
+      width: '10%',
+      marginLeft: '2%'
     },
     icons: {
       marginLeft: '4%'

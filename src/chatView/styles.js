@@ -7,7 +7,7 @@ const styles = theme => ({
       padding: '2%',
       marginLeft: '20%',
       boxSizing: 'border-box',
-      top: '8%',
+      top: '50px',
       width: '80%',
       position: 'absolute',
     },
@@ -40,7 +40,7 @@ const styles = theme => ({
   
     chatHeader: {
         width: '80%',
-        height: '8%',
+        height: '50px',
         backgroundColor: '#344195',
         position: 'fixed',
         right: '0',
@@ -62,6 +62,11 @@ const styles = theme => ({
         fontSize: '10px',
         float: 'left' 
       },
+      btn: {
+        position: 'absolute',
+        left: '1%',
+        textAlign: 'center',
+      }
       
   });
   
