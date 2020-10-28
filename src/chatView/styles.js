@@ -2,46 +2,45 @@
 const styles = theme => ({
 
     content: {
-      height: 'calc(100vh - 100px)',
+      height: 'calc(100vh - 18%)',
       overflow: 'auto',
-      padding: '25px',
-      marginLeft: '300px',
+      padding: '2%',
+      marginLeft: '20%',
       boxSizing: 'border-box',
-      overflowY: 'scroll',
-      top: '50px',
-      width: 'calc(100% - 300px)',
-      position: 'absolute'
+      top: '8%',
+      width: '80%',
+      position: 'absolute',
     },
   
     userSent: {
       float: 'left',
       clear: 'both',
-      padding: '20px',
+      padding: '2%',
       boxSizing: 'border-box',
       wordWrap: 'break-word',
-      marginTop: '10px',
+      marginTop: '2%',
       backgroundColor: '#ADD8E6',
       color: 'black',
-      width: '300px',
-      borderRadius: '10px'
+      width: '20%',
+      borderRadius: '10px',
     },
   
     friendSent: {
       float: 'right',
       clear: 'both',
-      padding: '20px',
+      padding: '2%',
       boxSizing: 'border-box',
       wordWrap: 'break-word',
-      marginTop: '10px',
+      marginTop: '2%',
       backgroundColor: '#E6E6FA',
       color: 'black',
-      width: '300px',
-      borderRadius: '10px'
+      width: '20%',
+      borderRadius: '10px', 
     },
   
     chatHeader: {
         width: '80%',
-        height: '50px',
+        height: '8%',
         backgroundColor: '#344195',
         position: 'fixed',
         right: '0',

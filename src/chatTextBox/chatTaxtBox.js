@@ -56,14 +56,14 @@ class ChatTextBox extends React.Component {
 
     render(){
         const {classes} = this.props;
-        return (<div>
+        return (<div className={classes.chatTextBoxContainer}>
         {
             this.state.showEmojisMenu ?
             <span className={classes.emojiMenu}>
                 <Picker onSelect={this.addEmoji} emojiTooltip={true}/>
             </span> : null
         }
-        <div className={classes.chatTextBoxContainer}>
+        <div>
         <TextField placeholder='Typing your message...'
         onKeyUp={(e) => this.userTyping(e)}
             id='chatTextBox'
