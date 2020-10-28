@@ -41,11 +41,11 @@ class ChatList extends React.Component {
                 return (<div>
                     <main className={classes.root}>
                     <h2>Hello {this.props.userName}!</h2>
-                    <h1 style={{marginLeft: 20}}>Start To Chat!<img src={Logo} style={{width: 40, marginLeft: 15}}/></h1>
+                    <h1>Start To Chat!<img src={Logo} className={classes.img}/></h1>
                     <Button variant='contained' fullWidth color='primary' className={classes.newChatBtn}
-                    onClick={this.newChat}>New Message <AddCommentIcon style={{marginLeft: 10}}/></Button>
+                    onClick={this.newChat}>New Message <AddCommentIcon className={classes.icons}/></Button>
                     <Button variant='contained' fullWidth color='primary' className={classes.createGroupBtn}
-                    onClick={this.newGroup}>New Group<GroupAddIcon style={{marginLeft: 10}}/></Button>
+                    onClick={this.newGroup}>New Group<GroupAddIcon className={classes.icons}/></Button>
                     {
                         chats.length > 0 ? 
                         <List>

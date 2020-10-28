@@ -3,11 +3,12 @@ import {deepPurple} from '@material-ui/core/colors';
 const styles = theme => ({
     root: {
       backgroundColor: theme.palette.background.paper,
-      height: 'calc(100% - 35px)',
+      height: '100%',
       position: 'absolute',
       left: '0',
-      width: '300px',
-      boxShadow: '0px 0px 2px black'
+      width: '20%',
+      boxShadow: '0px 0px 2px black',
+      overflow: 'auto'
     },
     listItem: {
       cursor: 'pointer'
@@ -29,6 +30,12 @@ const styles = theme => ({
     purple: {
       color: theme.palette.getContrastText(deepPurple[500]),
       backgroundColor: deepPurple[500],
+    },
+    img: {
+      width: '10%'
+    },
+    icons: {
+      marginLeft: '4%'
     }
   });
   
