@@ -9,13 +9,14 @@ const styles = theme => ({
       marginLeft: 'auto',
       marginRight: 'auto',
     },
+   
   },
   paper: {
-    padding: `${theme.spacing() * 2}px ${theme.spacing() * 3}px ${theme.spacing() * 3}px`,
+    padding: `${theme.spacing() * 2}px ${theme.spacing() * 2}px ${theme.spacing() * 2}px`,
     position: 'absolute',
     width: '400px',
     top: '50px',
-    left: 'calc(50% + 150px - 175px)'
+    left: 'calc(50% + 150px - 175px)',
   },
   form: {
     width: '100%',
@@ -29,7 +30,10 @@ const styles = theme => ({
     textAlign: 'center'
   },
   ol: {
-    boxSizing: 'border-box'
+    marginTop: 0,
+    boxSizing: 'border-box',
+    overflow: 'auto',
+    height: '195px',
   },
    li: {
     padding: '10px 8px 10px 30px',
@@ -66,7 +70,7 @@ const styles = theme => ({
     color: 'white',
     border: '1px solid #008CBA',
     padding: '6px 18px'
-  },
+  }
 });
 
 export default styles;

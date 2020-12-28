@@ -7,9 +7,6 @@ const PopupDeleteUser = ({text, userToDelete, yesToDeleteFn, NoToDeleteFn}) => {
   <div className='popup'>  
   <div className='popupInner'>  
   <h3 style={{color: 'SeaGreen'}}>{text+ ": "+ userToDelete}?</h3>
-  {
-    
-  }  
   <button onClick={(e) => yesToDeleteFn(e)}>Yes</button>  
   <button onClick={NoToDeleteFn}>No</button>
   </div>  

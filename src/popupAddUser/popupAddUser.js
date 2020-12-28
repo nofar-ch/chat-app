@@ -8,17 +8,19 @@ const PopupAddUser = ({classes, chat, users, addThisUserFn}) => {
   <div className='popup'>  
   <div className='popupInner'>  
   <h2 style={{color: 'SeaGreen'}}>Add Users</h2>
-  <ol>
-  {
-    users.map((item, index) => {
-        if(!chat.users.includes(item.email))
-            return <li key={index}>{item.email}
-            <AddCircleOutlineIcon className={classes.iconAddThisUser} 
-            onClick={(e) => addThisUserFn(e, item.email)}/>
-              </li>
-    })
-  }
-  </ol>
+  <div className={classes.userList}>
+    <ol>
+    {
+      users.map((item, index) => {
+          if(!chat.users.includes(item.email))
+              return <li key={index} className={classes.li}>{item.email}
+              <AddCircleOutlineIcon className={classes.iconAddThisUser} 
+              onClick={(e) => addThisUserFn(e, item.email)}/>
+                </li>
+      })
+    }
+    </ol>
+  </div>
   </div>  
   </div>  
 );  

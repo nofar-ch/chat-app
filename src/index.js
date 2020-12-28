@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 import {Route, Switch, BrowserRouter as Router} from 'react-router-dom';
 import Login from './login/login';
 import SignUp from './signUp/signUp';
 import Dashboard from './dashboard/dashboard';
+import'./styles.css';
 
 const firebase = require("firebase");
 require("firebase/firestore");

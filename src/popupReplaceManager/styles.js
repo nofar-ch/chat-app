@@ -18,7 +18,8 @@ const styles = theme => ({
         bottom: '25%',
         margin: 'auto',
         borderRadius: '20px',  
-        background: 'white'  
+        background: 'white',
+        overflow: 'auto',
       },
       iconSelect: {
         cursor: 'pointer',

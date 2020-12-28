@@ -29,6 +29,10 @@ const styles = theme => ({
     errorText: {
       color: 'red',
       textAlign: 'center'
+    },
+    userList: {
+      overflow: 'auto',
+      height: '300px',
     }
 
   });

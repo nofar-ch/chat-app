@@ -112,9 +112,11 @@ class NewGroup extends React.Component {
                 <Input id='name-of-group' required className={classes.input} autoFocus 
                 onChange={(e) => this.userTyping(e)}></Input>
             </FormControl>
+            <div className={classes.userList}>
             {
                 this.state.friends
             }
+            </div>
             <Button type='submit' fullWidth className={classes.submit} variant='contained' color='primary'>
                     Add Group!
             </Button>

@@ -14,7 +14,6 @@ const styles = theme => ({
       height: '65px',
       left: '20%',
       boxSizing: 'border-box',
-      overflow: 'auto',
       width: '80%'
     },
   
@@ -31,10 +30,8 @@ const styles = theme => ({
 
     emojiMenu: {
       position: "absolute",
-      bottom: 15,
       right: 0,
-      cssFloat: "right",
-      marginLeft: "200px"
+      bottom: '20px',
     }
   });
   

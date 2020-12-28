@@ -3,7 +3,7 @@ import ChatList from '../chatList/chatList'
 import styles from './styles';
 import {withStyles, Button} from '@material-ui/core';
 import ChatView from '../chatView/chatView';
-import ChatTextBox from '../chatTextBox/chatTaxtBox'
+import ChatTextBox from '../chatTextBox/chatTextBox'
 import NewChat from '../newChat/newChat'
 import NewGroup from '../newGroup/newGroup'
 import GroupList from '../groupList/groupList';
@@ -278,16 +278,17 @@ exitGroup = async () => {
     {
         const {classes} = this.props;
 
-        return (<div>
-        <ChatList history={this.props.history}
-        newChatBtnFn={this.newChatBtnClicked}
-        newGroupBtnFn={this.newGroupBtnClicked}
-        selectedChatFn={this.selectedChat}
-        chats={this.state.chats}
-        userEmail={this.state.email}
-        userName={this.state.userName}
-        selectedChatIndex={this.state.selectedChatIndex}
-        />
+        return (
+            <div className={classes.mainContainer}>
+            <ChatList history={this.props.history}
+            newChatBtnFn={this.newChatBtnClicked}
+            newGroupBtnFn={this.newGroupBtnClicked}
+            selectedChatFn={this.selectedChat}
+            chats={this.state.chats}
+            userEmail={this.state.email}
+            userName={this.state.userName}
+            selectedChatIndex={this.state.selectedChatIndex}
+            />
 
         {
             this.state.newChatFormVisible ||  this.state.newGroupFormVisible ? 

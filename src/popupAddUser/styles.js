@@ -18,12 +18,24 @@ const styles = theme => ({
         bottom: '25%',
         margin: 'auto',
         borderRadius: '20px',  
-        background: 'white'  
+        background: 'white',
+        overflow: 'auto'
       },
       iconAddThisUser:{
           cursor: 'pointer',
           position: 'absolute',
-          right: '10px', 
+          right: '5px', 
+      },
+      userList: {
+        position: 'relative',
+        width: '100%',
+        overflow: 'auto',
+        height: '150px',
+      }, 
+      li: {
+        padding: '8px',
+        margin: '8px',
+        backgroundColor: '#E6E6FA'
       }
     });
     

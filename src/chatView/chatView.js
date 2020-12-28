@@ -24,11 +24,11 @@ class ChatView extends React.Component {
         const {classes, chat, userEmail}= this.props;
 
         if(chat === undefined) {
-            return (<main className={classes.content}></main>)
+            return (<main></main>)
         }
         else {
-            return(<div>
-                <div className={classes.chatHeader} style={{marginTop: '0px'}}>
+            return(<div className={classes.mainContainerChatView}>
+                <div className={classes.chatHeader}>
                     { 
                         chat.type === 'private' ?
                         <div>

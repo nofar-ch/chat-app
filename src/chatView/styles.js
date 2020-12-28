@@ -1,15 +1,20 @@
 
 const styles = theme => ({
 
+    mainContainerChatView: {
+      position: 'relative',
+      width: '80%',
+      float: 'right',
+      height: 'calc(100vh - 70px)'
+  },
     content: {
-      height: 'calc(100vh - 18%)',
+      position: 'absulote',
+      height: 'calc(100% - 50px)',
       overflow: 'auto',
       padding: '2%',
-      marginLeft: '20%',
       boxSizing: 'border-box',
       top: '50px',
-      width: '80%',
-      position: 'absolute',
+      width: '100%'
     },
   
     userSent: {
@@ -39,11 +44,12 @@ const styles = theme => ({
     },
   
     chatHeader: {
-        width: '80%',
+      position: 'absulote',
+        width: '100%',
         height: '50px',
         backgroundColor: '#344195',
-        position: 'fixed',
         right: '0',
+        top: '2px',
         fontSize: '18px',
         textAlign: 'center',
         color: 'white',

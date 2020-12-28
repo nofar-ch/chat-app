@@ -3,7 +3,7 @@ import {deepPurple} from '@material-ui/core/colors';
 const styles = theme => ({
     root: {
       backgroundColor: theme.palette.background.paper,
-      height: '100%',
+      height: '98%',
       position: 'absolute',
       left: '0',
       width: '20%',
